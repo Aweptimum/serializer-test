@@ -2,7 +2,7 @@
 
 namespace App\Test;
 
-class A implements Letter
+class A
 {
     private EnumA $letter;
 

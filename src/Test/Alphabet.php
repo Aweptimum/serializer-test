@@ -4,7 +4,7 @@ namespace App\Test;
 
 class Alphabet
 {
-    /** @var Letter[] */
+    /** @var A[] */
     private array $letters;
 
     public function __construct(?array $letters = [])
