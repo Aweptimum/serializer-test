@@ -19,6 +19,10 @@ services:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
             - '../src/Kernel.php'
+    
+    object_normalizer:
+        class: Symfony\Component\Serializer\Normalizer\ObjectNormalizer
+        tags: [serializer.normalizer]
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
