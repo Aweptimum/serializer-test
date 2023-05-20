@@ -9,7 +9,7 @@ use Symfony\Component\Serializer\Annotation\DiscriminatorMap;
     typeProperty: 'letter',
     mapping: [
         'a' => A::class,
-        'b' => B::class,
+        'A' => A::class,
     ]
 )]
 interface Letter

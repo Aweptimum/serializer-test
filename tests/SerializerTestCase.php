@@ -19,8 +19,9 @@ class SerializerTestCase extends KernelTestCase
         $serializer = static::getContainer()->get(SerializerInterface::class);
 
         $normalized = $serializer->normalize($alphabet);
+        print_r($normalized);
 
-        self::assertSame('A', $normalized[0]['letter']);
-        self::assertSame('a', $normalized[1]['letter']);
+        self::assertSame('A', $normalized['letters'][0]['letter']);
+        self::assertSame('a', $normalized['letters'][1]['letter']);
     }
 }
