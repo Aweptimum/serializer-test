@@ -20,6 +20,7 @@ class SerializerTestCase extends KernelTestCase
 
         $normalized = $serializer->normalize($alphabet);
 
-        var_dump($normalized);
+        self::assertSame('A', $normalized[0]['letter']);
+        self::assertSame('a', $normalized[1]['letter']);
     }
 }
