@@ -3,8 +3,7 @@ MRE for breaking symfony/serializer
 
 Steps:
 1. Clone, cd into it, composer install
-2. git checkout b7f5233d0bb23ff40541b6a9e09756635513d61d
-3. php bin/phpunit tests/SerializerTestCase.php
+2. php bin/phpunit tests/SerializerTestCase.php
 4. RED
 
 It's definitely a problem with the discriminator. If you check out the 3rd commit (d57a3b5ffecf2597a26efd2bc5b49365b831b190), the enum values are normalized according to their case.
